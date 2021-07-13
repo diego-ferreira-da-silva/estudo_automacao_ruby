@@ -1,7 +1,7 @@
 #language: pt
 Funcionalidade: Fazer uma Soma
 
--Como usuário
+-Como usuario
 -Quero fazer uma Soma.
 
     Cenario: Fazer uma Soma

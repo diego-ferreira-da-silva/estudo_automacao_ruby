@@ -2,9 +2,9 @@
 
 Funcionalidade: Calculo de multiplicação
 
-Esquema do Cenario: Fazer uma multiplicação
-Quando eu multiplico minhas <laranjas> pelo <valor>.
-Então eu vejo qual o <resultado> da multiplicação.
+    Esquema do Cenario: Fazer uma multiplicação
+        Quando eu multiplico minhas <laranjas> pelo <valor>.
+        Então eu vejo qual o <resultado> da multiplicação.
 
 Exemplos:
 |laranjas|valor|resultado|
