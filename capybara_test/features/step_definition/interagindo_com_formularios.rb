@@ -1,0 +1,25 @@
+Quando('eu faco cadastro') do
+    visit 'users/new'
+    #localizando por id
+    fill_in(id: 'user_name', with: 'Diego')
+
+    #localizando o elemento mapeado e seta com o conteúdo
+    find('#user_lastname').set('Ferreira')
+
+    #outra maneira de preenchimento é send_keys
+    find('#user_email').send_keys('teste_email@testemail.com')
+
+    fill_in(id: 'user_address', with: 'Rua Fantasiosa')
+    find('#user_university').set('Faculdade da Vida')
+    find('#user_profile').send_keys('Estudante')
+    find('#user_gender').send_keys('Masculino')
+    find('#user_age').send_keys('28')
+    find('input[value="Criar"]').click
+    sleep(5)
+end
+
+Entao('verifico se fui cadastrado') do
+    texto = find('#notice')
+    expect(texto.text).to eq 'Usuário Criado com sucesso'
+
+end
