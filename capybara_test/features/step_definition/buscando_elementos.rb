@@ -17,4 +17,5 @@ Entao('verifico se encontrei os elementos') do
 
     #primeiro elemento com Button (Busca o primeiro elemento que tenha a classe btn)
     first('.btn')
+    sleep(4)
 end

@@ -18,6 +18,11 @@ Quando('clico em botoes') do
 
     sleep(5)
 
-    visit '/'
-    click_link('Github')
+    visit 'https://github.com/diegofds92'
+    sleep(5)
+end
+
+Entao('valido redirecionamento para o github') do 
+    texto = find(:xpath, '//span[@itemprop="name"]')
+    expect(texto.text).to eq 'Diego Ferreira da Silva'
 end
