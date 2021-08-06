@@ -3,10 +3,8 @@ Quando('eu faco cadastro') do
     #localizando por id
     fill_in(id: 'user_name', with: 'Diego')
 
-    #localizando o elemento mapeado e seta com o conteúdo
     find('#user_lastname').set('Ferreira')
 
-    #outra maneira de preenchimento é send_keys
     find('#user_email').send_keys('teste_email@testemail.com')
 
     fill_in(id: 'user_address', with: 'Rua do Fim do Universo')

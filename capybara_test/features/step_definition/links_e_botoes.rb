@@ -12,7 +12,7 @@ Quando('clico em botoes') do
     find('a[onclick="ativaedesativa2()"]').click
 
     #click Duplo
-    find('a[onclick="ativaedesativa2()"]').double_click
+    #find('a[onclick="ativaedesativa2()"]').double_click
 
     #find('a[onclick="ativaedesativa2()"]').right_click
 
